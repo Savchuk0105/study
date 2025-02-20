@@ -1,14 +1,11 @@
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class Main {
-    public static void main(String[] args) {
-        String poem = "Вот пример стихотворения для анализа";
+    public static Set<Character> findCommonLetters(String poem) {
         String[] words = poem.toLowerCase().split("\\s+");
 
         if (words.length == 0) {
-            System.out.println("Стихотворение пустое.");
-            return;
+            return new HashSet<>();
         }
         Set<Character> commonLetters = new HashSet<>();
         for (char c : words[0].toCharArray()) {
@@ -28,6 +25,14 @@ public class Main {
                 break;
             }
         }
+
+        return commonLetters;
+    }
+
+    public static void main(String[] args) {
+        String poem = "Вот пример стихотворения для анализа";
+        Set<Character> commonLetters = findCommonLetters(poem);
+
         if (commonLetters.isEmpty()) {
             System.out.println("Нет общих букв во всех словах.");
         } else {
