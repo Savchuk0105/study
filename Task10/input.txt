@@ -1,0 +1,5 @@
+This is a test file for the program.
+It contains words of different lengths: short, medium, and long.
+The program will remove some words with 3 to 5 letters.
+For example, words like "cat", "dog", "apple", "banana" will be processed.
+Let's see how it works!

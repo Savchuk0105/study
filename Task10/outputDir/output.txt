@@ -1,0 +1,5 @@
+ is a    the program.
+It contains  of different lengths: , medium,  .
+ program  remove   with 3 to 5 letters.
+ example,   "", "", "", "banana" will be processed.
+'s   it !
